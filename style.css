@@ -51,7 +51,7 @@ main{
 }
 
 .logo{
-    width: 22%;
+    width: 48vh;
     height: 26vh;
     margin: 0%;
     padding: 0%;
@@ -159,9 +159,9 @@ a:hover{
     }
 
 .slide{
-    width: 85%; /*Tamanho do slide dentro da section*/
+    width: 100%; /*Tamanho do slide dentro da section. Deixar em 100% se quiser a ocupação de toda a section*/
     height: 40%;
-    overflow: hidden;
+    overflow: hidden; /*Impede que o carrossel vaze*/
     border-radius: 2%;
     transition: all 0.4s;
     align-items: center;
@@ -241,6 +241,14 @@ a:hover{
     transition: all 0.5s;
     background: #fff;
 }
+
+@media (max-width: 1150px){
+    .texto{
+        padding: 0%;
+        margin: 0%;
+    }
+}
+
 
 @media (max-width: 999px){
 
