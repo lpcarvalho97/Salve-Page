@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salve Sistemas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Inserção do link para os ícones na página-->
+    <script src="https://kit.fontawesome.com/98beecc813.js" crossorigin="anonymous"></script>
+    <!--Inserção do Favicon-->
+    <link rel="icon" type="favicon/x-icon" href="/favicon_io/favicon-16x16.png">
+</head>
+<body>
+    <div class="topo">
+        <a class="fonet" href="https://wa.me/5547988609310" target="_blank"><i class="fa-solid fa-phone"></i> (47) 9 8860-9310</a>
+        <br>
+        <a class="emailt" href="mailto:empresasalvesistemas@gmail.com"><i class="fa-solid fa-envelope"></i> empresasalvesistemas@gmail.com</a>
+        
+    </div>
+    <header>
+        <figure class="logo">
+            <img class="salve" src="Salve.jpg" alt="logosalve">
+        </figure>
+        <h1 class="texto">Sistemas, Websites e Suporte em TI.</h1>
+        
+        <nav class="menu">
+            <ul class="menut">
+                <li class="menuli">
+                    <a href="index.html"><b>Início</b></a>
+                </li>
+                <li class="menuli">
+                    <a href=""><b>Serviços</b></a>
+                </li>
+                <li class="menuli">
+                    <a href="contato.html"><b>Contato</b></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="post">
+            <div class="slide">
+                <div class="slides">
+                    
+                    <div id="voltar" class="btn">
+                        <i class="fas fa-chevron-left">                    
+                        </i>
+                    </div>
+        
+                    <div id="next" class="btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+
+                        
+                    <div id="atual" class="image">
+                        <img class="carrossel" src="https://c.pxhere.com/images/8f/38/97ebae748da48734e9ae1eda81ec-1439563.jpg!d" 
+                        srcset="https://c.pxhere.com/images/8f/38/97ebae748da48734e9ae1eda81ec-1439563.jpg!d" 
+                        alt="serviço, computadores, reparar, eletrônicos, computador, Equipamento informático, isto, Componentes, 
+                        tecnologia, equipamento, comportamento humano, desenho animado, comunicação, conversação, produtos, ilustração, 
+                        Fonte, trabalho, Marca, Banco de imagens In PxHere">
+
+                        
+                    </div>        
+                        
+        
+                    <div id="atual" class="image">
+                        <img class="carrossel" src="https://c.pxhere.com/photos/1c/4f/computer_keyboard_computing_brainstorming_ideasharing_workspace-503194.jpg!d"
+                        srcset="https://c.pxhere.com/photos/1c/4f/computer_keyboard_computing_brainstorming_ideasharing_workspace-503194.jpg!d" 
+                        alt="escrevendo, mão, pessoa, área de trabalho, desenhar, Aprendendo, Informática, Teclado de computador, debate, Idear, 
+                        Banco de imagens In PxHere">
+    
+                        
+                    </div>
+                    
+
+                    <div id="atual" class="image">
+                        <img class="carrossel" src="https://c.pxhere.com/images/8c/2a/0d81338e8721957d193e4d662da2-1448921.jpg!d" 
+                            rcset="https://c.pxhere.com/images/8c/2a/0d81338e8721957d193e4d662da2-1448921.jpg!d" 
+                            alt="aplicativo, aplicação, o negócio, estratégia de negócio, café, colaboração, Colegas, computador, conexão, conteúdo, 
+                            criativo, dados, desenhar, desenvolvimento, dispositivo digital, mídia digital, discussão, amigos, dar, grupo, Entregando,
+                            Mãos, pagina inicial, Html, Idéias, em formação, Internet, encontro, bloco de anotações, página, papel, pessoas, 
+                            planejamento, presente, rede social, comece, estratégia, Leve embora, tarefa, tecnologia, modelo, juntos, Ui, 
+                            interface de usuário, rede, Designer de Web, página da web, local na rede Internet, trabalhos, trabalhando, Www, 
+                            produtos, comunicação, Fonte, mobília, escrivaninha, trabalho, material de escritório, computador portátil, escritório, 
+                            Marca, Banco de imagens In PxHere">
+    
+                       
+    
+                    </div>
+
+                    
+        
+                </div>
+                <div class="balls">
+                    <div class="imgAtual" id="0"></div>
+                    <div id="1"></div>
+                    <div id="2"></div>
+                    <div id="3"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+    <footer class="rodape">
+        <ul class="midias">
+            <li class="redes">
+                <a href="https://wa.me/5547988609310" target="_blank"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+            </li>
+            <li class="redes">
+                <i class="fa-brands fa-linkedin fa-lg"></i>
+            </li>
+            <li class="redes">
+                <a href="mailto:empresasalvesistemas@gmail.com" target="_blank" ><i class="fa-solid fa-envelope fa-lg"></i></a>
+            </li>
+        </ul>
+        <a>SALVE SISTEMAS LTDA - 2022</a>
+    </footer>
+</body>
+
+<script src="mobile.js"></script>
+<script>
+    var balls = document.querySelector('.balls')
+    var quant = document.querySelectorAll('.slides .image')
+    var atual = 0
+    var imagem = document.getElementById('atual')
+    var next = document.getElementById('next')
+    var voltar = document.getElementById('voltar')
+    var rolar = true
+
+    for(let i=0; i < quant.length; i ++){
+        var div = document.createElement('div')
+        div.id = 1
+        balls.appendChild(div)
+    }
+    document.getElementById('0').classList.add('imgAtual')
+
+    var pos = document.querySelectorAll('.balls div')
+
+    for(let i=0; i < pos.length; i ++){
+        pos[i].addEventListener('click', ()=>{
+            atual = pos[i].id
+            rolar = false
+            slide()
+        })
+    }
+
+    voltar.addEventListener('click', ()=>{
+        atual--
+        rolar = false
+        slide()
+    })
+    next.addEventListener('click', ()=>{
+        atual++
+        rolar = false
+        slide()
+    })
+
+    function slide(){
+        if(atual >= quant.length){
+            atual = 0
+        }
+        else if(atual < 0){
+            atual = quant.length-1
+        }
+        document.querySelector('.imgAtual').classList.remove('.imgAtual')
+        imagem.style.marginLeft = 200*atual+'%'
+        document.getElementById(atual).classList.add('imgAtual')
+
+    }
+    setInterval(()=>{
+        if(rolar){
+        atual++
+        slide()
+        }
+        else{
+            rolar = false
+        }
+        
+    },4000)
+
+</script>
+
+</html>

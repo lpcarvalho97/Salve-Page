@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*background-color: rgb(225, 242, 243);*/
+    /*height: 100vh;*/
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: red;
+}
+
+.topo{
+    text-align: center;
+    background-color: rgb(48, 41, 41);
+    color: rgb(95, 160, 136);
+    padding-bottom: 2vh;
+    padding-top: 3%;
+    margin-top: -2%;
+    margin-left: 0%;
+    height: 6vh;
+    margin-left: -1%;
+
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    padding-top: 1%;
+    padding-bottom: 0%;
+    margin-left: 0%;
+    flex-direction:row;
+    display: flex;
+    width: 100%;
+    height: 20%;
+}
+
+main{
+    
+    /*height: 61vh;*/
+    background-color: black;
+}
+
+.post{
+    background-color: rgb(219, 214, 204);
+    /*padding-top: 0%;*/
+    padding: 0% 0% 5% 0%;
+    text-align: center;    
+    width: 100%;
+}
+
+.logo{
+    width: 22%;
+    height: 26vh;
+    margin: 0%;
+    padding: 0%;
+}
+
+img{
+    width: 100%;
+    height: 26vh;
+    padding: 0%;
+    margin: 0%;
+}
+
+.rodape{
+    background-color: rgb(48, 41, 41);
+    color: rgb(95, 160, 136);
+    text-align: center;
+    padding: 5% 0% 5% 0%;
+    margin-top: 5%;
+    margin-bottom: -1%;
+    margin-left: 0%;
+    align-items: center;
+    width: 100%;
+    height: 6vh;
+}
+
+
+
+.emailt{
+    text-decoration: none;
+    color: rgb(95, 160, 136);
+}
+
+.fonet{
+    text-decoration: none;
+    color: rgb(95, 160, 136);
+}
+
+.menu{
+    font-family: monospace;
+    color: rgb(0, 0, 0);
+    margin-right: 0;
+    margin-left: 0%;  
+    padding: 0%;
+    width: 30%;
+    height: 28vh;
+    font-size: large;
+    
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.menut{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0;
+    margin-top: 0%;
+    padding: 0%;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.menuli{
+    padding-left: 5%;
+    margin: 0%;
+    margin-top: 100%;
+    
+}
+
+.menuli a{
+    text-decoration: none;
+    color: black;    
+}
+
+.texto{
+   
+    width: 50%;
+    height: 20vh;
+    margin-left: 5%;
+    margin-top: 4%;
+    margin-bottom: 0%;
+    font-size: 6vh;
+}
+
+.stelefone{
+    margin-bottom: 10%;
+}
+
+.midias{
+    list-style-type: none;
+    display: flex;
+    padding-left: 46%;
+    padding-bottom: 1%;
+}
+
+.redes{
+    padding-right: 2%;
+    text-decoration: none;
+}
+
+.redes a{
+    color: rgb(95, 160, 136);
+    }
+
+.slide{
+    width: 85%; /*Tamanho do slide dentro da section*/
+    height: 40%;
+    overflow: hidden;
+    border-radius: 2%;
+    transition: all 0.4s;
+    align-items: center;
+  
+}
+
+.slides{
+    width: 90rem; /* Esse width tem que representar o número de elementos do carrossel * 100% para ocupar todo o slide*/
+    display: flex; 
+    padding-top: 2%; 
+}
+
+
+.image img{
+    width: 40 vh; /*Representa o tamanho da imagem. Fica no fit-content para padronizar os tamanhos*/
+    height: 50vh; /*Nesse percentual permite a inclusão da tag <p>*/
+    /*padding-left: 10%;
+    padding-right: 10%;*/
+}
+
+#atual{
+    transition: all 2s;
+    
+}
+
+.btn{
+    position: absolute;
+    color: #fff;
+    padding: 1%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 2.7em;
+    margin-top: 12%;
+}
+
+.btn:hover{
+    transform: scale(1.5);
+}
+
+#voltar{
+    top: 50%;
+    left: 10%;
+}
+
+#next{
+    top: 50%;
+    right: 10%;
+}
+
+.balls {
+    position: absolute;
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    margin-top: -3%;
+    margin-left: 30%;
+}
+
+.balls div{
+    transition: all 0.5s;
+    border: 1% solid #fff;
+    padding: 1%;
+    border-radius: 50%;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.balls div:hover{
+    background: #fff;
+}
+
+.imgAtual{
+    transition: all 0.5s;
+    background: #fff;
+}
+
+@media (max-width: 999px){
+
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    .topo{
+        text-align: center;
+        background-color: rgb(48, 41, 41);
+        color: rgb(95, 160, 136);
+        margin-top: 0%;
+        margin-left: 0%;
+        width: 100%;
+        height: fit-content;
+    
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+    }
+
+    .logo{
+        width: 50%;
+        height: fit-content;
+        margin: 0%;
+    }
+
+    .image img{
+        width: fit-content; /*Representa o tamanho da imagem. Fica no fit-content para padronizar os tamanhos*/
+        height: 50vh; /*Nesse percentual permite a inclusão da tag <p>*/
+        /*margin-right: 20%;
+        margin-left: 20%;*/
+        
+    }
+
+    .texto{
+   
+        width: fit-content;
+        height: 0vh;
+        margin-left: 5%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: 6vh;
+    }
+
+    .menu{
+        font-family: monospace;
+        color: rgb(0, 0, 0);
+        width: 30vh;
+        height: fit-content;
+        margin-right: 1vh;
+        margin-left: 0%;
+        display: block;
+        
+    }
+
+    main{
+        width: 100%;
+    }
+    
+    .midias{
+        padding-left: 0%;
+    }
+}
+
+
+@media(max-width: 500px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 100%;
+        height: fit-content;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .topo{
+        text-align: center;
+        background-color: rgb(48, 41, 41);
+        color: rgb(95, 160, 136);
+        margin-top: 0%;
+        margin-left: 0%;
+        width: 100vw;
+        height: fit-content;
+    
+    }
+
+    header {
+        display: inline-block; /*Garante que nessas dimensões o header ficará numa linha vertical semi-alinhada*/
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .logo{
+        width: 100vw;
+        height: 100%;
+        margin:0%;
+    }
+
+    .image img{
+        width: fit-content; /*Representa o tamanho da imagem. Fica no fit-content para padronizar os tamanhos*/
+        height: 50vh; /*Nesse percentual permite a inclusão da tag <p>*/
+        /*margin-right: 20%;
+        margin-left: 20%;*/
+        
+    }
+
+    .slides{
+        width: 100%;
+        padding-top: 2%; 
+        justify-content: space-around;
+    }
+    
+    img{
+        width: 100vw;
+        height: fit-content;
+        margin-top: 2%;
+    }    
+
+
+    .texto{
+        height: 15vh;
+        margin-top: 4%;
+        font-size: 4vh;
+        text-align: center;
+        margin-left: 0%;
+    }
+
+    .menu{
+        width: 100vw;
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    .fonet{
+        display:block;
+        width: 100%;
+        padding-top: 2%;
+    }
+    
+    .emailt{
+        display: block;
+        padding-bottom: 1%;
+    }
+
+    .menut{
+        margin: 0%;
+        padding: 0%;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .menuli{
+
+        padding-top: 0%;
+        margin: 0%;
+        padding: 0%;
+        
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .post{
+        margin: 0%;
+        padding: 0% 0% 5% 0%;
+        text-align: center;    
+        width: 100%;
+    }
+
+    .btn{
+        color: #fff;
+        padding: 1%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.4s;
+        font-size: 2.7em;
+        margin-top: 80%;
+    }
+    
+    .rodape{
+        background-color: rgb(48, 41, 41);
+        color: rgb(95, 160, 136);
+        text-align: center;
+        margin: 0%;
+        padding: 0%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        display: block;
+    }
+    
+    .midias{
+        margin-left: 35%;
+        width: fit-content;
+    }
+
+    .redes{
+        margin-right: 25%;
+    }
+    
+}
+

@@ -1,0 +1,32 @@
+@media screen and (max-width: 300px){
+    .titulo{
+        font-size: 30px;
+    }
+    .descricao{
+        width: 30%;  
+    }
+}
+
+@media screen and (max-width:700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+}
+
+.botao{
+    margin-top: 5px;
+    width: 190px;
+    height: 60px;
+}
+
+.descricao {
+    width: 210%;
+    margin-bottom: 20%;
+}
+}
+
+@media screen and (min-width: 1000px){
+    .descricao{
+        width: 40%;
+    }
+}
