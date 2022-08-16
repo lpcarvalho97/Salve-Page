@@ -43,11 +43,14 @@ main{
 }
 
 .post{
-    background-color: rgb(219, 214, 204);
+    /*background-color: rgb(219, 214, 204);*/
     /*padding-top: 0%;*/
     padding: 0% 0% 5% 0%;
     text-align: center;    
     width: 100%;
+    /*background-color: rgb(141, 140, 138);*/
+    background-color: rgb(235, 250, 248);*/
+    /*background-color: rgba(114, 118, 119, 0.767);*/
 }
 
 .logo{
@@ -57,11 +60,15 @@ main{
     padding: 0%;
 }
 
-img{
+img{ /* Altera o tamanho da logo da Salve Sistemas*/
     width: 100%;
     height: 26vh;
     padding: 0%;
     margin: 0%;
+}
+
+.pcontato {
+    text-decoration: none;
 }
 
 .rodape{
@@ -69,7 +76,7 @@ img{
     color: rgb(95, 160, 136);
     text-align: center;
     padding: 5% 0% 5% 0%;
-    margin-top: 5%;
+    margin-top: 0%;
     margin-bottom: -1%;
     margin-left: 0%;
     align-items: center;
@@ -169,17 +176,40 @@ a:hover{
 }
 
 .slides{
-    width: 90rem; /* Esse width tem que representar o número de elementos do carrossel * 100% para ocupar todo o slide*/
+    width: fit-content; /* Esse width tem que representar o número de elementos do carrossel * 100% para ocupar todo o slide
+    Tentar deixar em fit-content para verificar se o comportamento deste combina com a lógica da programação do carrossel.*/
     display: flex; 
     padding-top: 2%; 
 }
 
 
 .image img{
-    width: 40 vh; /*Representa o tamanho da imagem. Fica no fit-content para padronizar os tamanhos*/
+    width:  50vw; /*Representa o tamanho da imagem. Fica no fit-content para padronizar os tamanhos*/
     height: 50vh; /*Nesse percentual permite a inclusão da tag <p>*/
     /*padding-left: 10%;
     padding-right: 10%;*/
+    margin-left: 10%;
+    border-radius: 5%;
+
+}
+
+.pag{
+    display: flex; /*Foi criada a class pag para configurar texto e imagem do carrossel lado a lado, o que é permitido através do atributo 
+    'flex';*/
+
+}
+
+.paragrafos{
+    width: 50vw;
+    height: 50vh;
+    
+}
+
+.propaganda{
+    margin-top: 20%;
+    margin-left: 12%;
+    margin-right: 10%;
+    font-family:'Times New Roman', Times, serif;
 }
 
 #atual{
@@ -189,7 +219,7 @@ a:hover{
 
 .btn{
     position: absolute;
-    color: #fff;
+    color: rgba(48, 41, 41, 0.425);
     padding: 1%;
     text-align: center;
     display: flex;
@@ -198,7 +228,7 @@ a:hover{
     cursor: pointer;
     transition: all 0.4s;
     font-size: 2.7em;
-    margin-top: 12%;
+    margin-top: 20%;
 }
 
 .btn:hover{
@@ -220,7 +250,7 @@ a:hover{
     width: 50%;
     display:flex;
     justify-content: center;
-    margin-top: -3%;
+    margin-top: 1%;
     margin-left: 30%;
 }
 
@@ -242,8 +272,27 @@ a:hover{
     background: #fff;
 }
 
-@media (max-width: 1150px){
+@media (max-width: 1350px){
     .texto{
+        padding: 0%;
+        margin: 0%;
+        font-size: 5vh;
+    }
+
+    .menuli{
+        padding: 1%;
+        font-size: medium;
+
+    }
+
+    .logo{
+        width: 36vh;
+        height: 20vh;
+    }
+
+    img{ /* Altera o tamanho da logo da Salve Sistemas*/
+        width: 100%;
+        height: 26vh;
         padding: 0%;
         margin: 0%;
     }
