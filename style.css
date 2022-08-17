@@ -37,9 +37,10 @@ header{
 }
 
 main{
-    
     /*height: 61vh;*/
-    background-color: black;
+    /*background-image: linear-gradient( to right, #86b7eb, rgb(28, 9, 9));*/
+    /*background-image: linear-gradient( to right, #2fe0c9, rgb(146, 111, 111));*/
+    background-image: linear-gradient(to bottom, #fff, rgb(48, 41, 41));
 }
 
 .post{
@@ -49,7 +50,7 @@ main{
     text-align: center;    
     width: 100%;
     /*background-color: rgb(141, 140, 138);*/
-    background-color: rgb(235, 250, 248);*/
+    background-color: rgb(235, 250, 248);
     /*background-color: rgba(114, 118, 119, 0.767);*/
 }
 
@@ -58,6 +59,12 @@ main{
     height: 26vh;
     margin: 0%;
     padding: 0%;
+}
+
+.bloco3{
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
 }
 
 img{ /* Altera o tamanho da logo da Salve Sistemas*/
@@ -69,6 +76,69 @@ img{ /* Altera o tamanho da logo da Salve Sistemas*/
 
 .pcontato {
     text-decoration: none;
+}
+
+.comeca{
+    display:flex;
+    padding-top: 3vw;
+    margin-left: 5%;
+    /*background-color:bisque;*/
+}
+
+.ic{
+    list-style-type: none;
+}
+
+.cont{
+
+    text-align: center;
+    /*background-color: rgb(235, 250, 248);*/
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+}
+
+.bloco2{
+    padding-left: 23vw;
+}
+
+.locais {
+    display: flex;
+    justify-content: center;
+
+}
+
+.local{
+    padding-top: 2vh;
+    padding-left: 0vh;
+    padding-right: 5vh;
+    padding-bottom: 2vh;
+    list-style-type: disc;
+    text-align: center;
+    
+}
+
+.mapa{
+    width: 40vw;
+    height:var(.escrever);
+    
+}
+
+.localizacao{
+    /*background-color: #fff;*/
+    padding-bottom: 2vh;
+    padding-left: 2%;
+}
+
+.redesc a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.atendimento{
+    text-align: center;
+    font-style: italic;
 }
 
 .rodape{
@@ -131,8 +201,10 @@ a:hover{
 }
 
 .menuli a{
-    text-decoration: none;
-    color: black;    
+    text-decoration:none;
+    /*color: black;*/
+    /*color: rgb(65, 65, 65);*/ 
+    color: rgb(128, 178, 171);
 }
 
 .texto{
@@ -152,7 +224,7 @@ a:hover{
 .midias{
     list-style-type: none;
     display: flex;
-    padding-left: 46%;
+    padding-left: 47%;
     padding-bottom: 1%;
 }
 
@@ -171,14 +243,14 @@ a:hover{
     overflow: hidden; /*Impede que o carrossel vaze*/
     border-radius: 2%;
     transition: all 0.4s;
-    align-items: center;
+    /*align-items: center;*/
   
 }
 
 .slides{
-    width: fit-content; /* Esse width tem que representar o número de elementos do carrossel * 100% para ocupar todo o slide
+    width: 100%; /* Esse width tem que representar o número de elementos do carrossel * 100% para ocupar todo o slide
     Tentar deixar em fit-content para verificar se o comportamento deste combina com a lógica da programação do carrossel.*/
-    display: flex; 
+    display:flex; 
     padding-top: 2%; 
 }
 
@@ -209,13 +281,26 @@ a:hover{
     margin-top: 20%;
     margin-left: 12%;
     margin-right: 10%;
-    font-family:'Times New Roman', Times, serif;
+    font-family: kanit, 'Times New Roman', Times, serif;
+    color: rgb(243, 108, 30);
 }
 
 #atual{
+    /*margin-left: -100%;*/
     transition: all 2s;
     
 }
+
+.texto4{
+    /*background-color: rgb(235, 250, 248);*/
+    text-align: center;
+    font-style: italic;
+}
+
+input{
+    width: 99%;
+}
+
 
 .btn{
     position: absolute;
@@ -254,6 +339,96 @@ a:hover{
     margin-left: 30%;
 }
 
+.escrever{
+    width: 50vw;
+    height: fit-content;
+    margin-left: 2vw;
+    background-color:rgba(58, 66, 57, 0.216);
+    border-radius: 5%;
+    padding: 1%;
+    
+}
+
+.campo{
+    border-radius: 5%;
+}
+
+.descreve{
+    margin-left: 2%;
+}
+
+.botao{
+    width: 15%;
+    margin-left: 45%;
+    padding-bottom: 1%;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    padding-top: 1%;
+
+}
+
+.services{
+    display: flow-root;
+    width: 100%;
+}
+
+.picture1{
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.mot{
+    text-align: center;
+    font-style: italic;
+    font-family: kanit, 'Times New Roman', Times, serif;
+    font-size: 5vh;
+    color: rgb(52, 52, 61);
+}
+
+.postagem1{
+    display:flex; /*Verificar!!!! */
+    margin-left: 2vw;
+    width: 98%;
+}
+
+.picture2{
+    height: 18vw;
+
+}
+
+.alinha{
+    align-items: center;
+    justify-content:center;
+    height: 100%;
+}
+
+.inner{
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 2vw;
+}
+
+.servtexto{
+    width: 95%;
+    padding-top: 9vw;
+    font-family: kanit, 'Times New Roman', Times, serif;
+    color: rgb(243, 108, 30);
+    font-size: 4vh;
+
+}
+
+textarea{
+    width: 99%;
+}
+
+legend{
+    text-align: center;
+    width: 15%;
+    background-color: rgba(1, 1, 1, 0.121);
+}
+
 .balls div{
     transition: all 0.5s;
     border: 1% solid #fff;
@@ -270,6 +445,13 @@ a:hover{
 .imgAtual{
     transition: all 0.5s;
     background: #fff;
+}
+
+@font-face {
+    font-family: Kanit;
+    src: url('/Fontes/Kanit-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @media (max-width: 1350px){
@@ -514,6 +696,63 @@ a:hover{
     .redes{
         margin-right: 25%;
     }
+
+    .comeca{
+        display: block;
+        padding-top: 10%;
+    }
+
+    .bloco2{
+        padding-left: 0vw;
+        padding-top: 8%;
+    }
+
+    .bloco3{
+        width: 100%;
+        display: block;
+    }
+    
+    .locais {
+        display:list-item;
+        justify-content: center;
+    
+    }
+
+    .mapa{
+        width: 98%;
+    }
+
+    .escrever{
+        width: 98%;
+        margin: 0;
+        padding: 1%;
+    }
+
+    legend{
+        width: 18%;
+    }
+
+    .image img{
+        width:  100%; /*Representa o tamanho da imagem. Fica no fit-content para padronizar os tamanhos*/
+        height: 50vw; /*Nesse percentual permite a inclusão da tag <p>*/
+       
+    }
+
+    .paragrafos{
+        width: 100%;
+        height: fit-content;
+        
+    }
+    
+    .pag{
+
+    display:block; /*Foi criada a class pag para configurar texto e imagem do carrossel lado a lado, o que é permitido através do atributo 
+    'flex';*/
+    width: 300vw;
+
+
+}
+
     
 }
 

@@ -30,7 +30,7 @@
                     <a href="index.html"><i class="fa-solid fa-house"></i><b> Início</b></a>
                 </li>
                 <li class="menuli">
-                    <a href="contato.html"><i class="fa-solid fa-briefcase"></i><b> Serviços</b></a>
+                    <a href="servicos.html"><i class="fa-solid fa-briefcase"></i><b> Serviços</b></a>
                 </li>
                 <li class="menuli">
                     <a href="contato.html"><b><i class="fa-solid fa-phone"></i> Contato</b></a>
@@ -53,8 +53,8 @@
                         <i class="fas fa-chevron-right"></i>
                     </div>
 
-                    <div class="pag">
-                        <div id="atual" class="image">
+                    <div class="pag" id="atual">
+                        <div  class="image">
                             <img class="carrossel" src="https://c.pxhere.com/images/8c/2a/0d81338e8721957d193e4d662da2-1448921.jpg!d" 
                             rcset="https://c.pxhere.com/images/8c/2a/0d81338e8721957d193e4d662da2-1448921.jpg!d" 
                             alt="aplicativo, aplicação, o negócio, estratégia de negócio, café, colaboração, Colegas, computador, conexão, conteúdo, 
@@ -66,15 +66,15 @@
                             Marca, Banco de imagens In PxHere">
                         </div>
                         <div class="paragrafos">
-                            <h2 class="propaganda">Está precisando de um sistema para a sua empresa? Nós criamos
+                            <h2 class="propaganda">Precisando de um sistema para a sua empresa? Nós criamos
                                 a solução certa para o seu negócio! <a class="pcontato" href="/contato.html"> Entre em contato e agende uma visita.</a>
                             </h2>
                         </div>
                     </div>
 
-                    <div class="pag">
+                    <div class="pag" id="atual">
 
-                        <div id="atual" class="image">
+                        <div  class="image">
                             <img class="carrossel" src="https://c.pxhere.com/photos/1c/4f/computer_keyboard_computing_brainstorming_ideasharing_workspace-503194.jpg!d"
                             srcset="https://c.pxhere.com/photos/1c/4f/computer_keyboard_computing_brainstorming_ideasharing_workspace-503194.jpg!d" 
                             alt="escrevendo, mão, pessoa, área de trabalho, desenhar, Aprendendo, Informática, Teclado de computador, debate, Idear, 
@@ -82,15 +82,15 @@
                         </div>
     
                         <div class="paragrafos">
-                            <h2 class="propaganda">Precisando de um site para turbinar o seu negócio? <a class="pcontato" href="/contato.html">Clique aqui.</a>
+                            <h2 class="propaganda">Tá faltando um site para turbinar o seu negócio? Fale com a Salve! <a class="pcontato" href="/contato.html">Clique aqui.</a>
 
                             </h2>
                         </div>  
 
                     </div>
 
-                    <div class="pag">
-                        <div id="atual" class="image">
+                    <div class="pag" id="atual">
+                        <div  class="image">
                           <img class="carrossel" src="https://c.pxhere.com/images/8f/38/97ebae748da48734e9ae1eda81ec-1439563.jpg!d" 
                           srcset="https://c.pxhere.com/images/8f/38/97ebae748da48734e9ae1eda81ec-1439563.jpg!d" 
                           alt="serviço, computadores, reparar, eletrônicos, computador, Equipamento informático, isto, Componentes, 
@@ -99,7 +99,7 @@
                         </div>   
 
                         <div class="paragrafos">                  
-                          <h2 class="propaganda">Também oferecemos serviços de suporte em TI como: Instalação de impressoras, formatação de computadores, redes e infraestrutura.  
+                          <h2 class="propaganda">Também oferecemos serviços de suporte em TI como: Instalação de impressoras, formatação de computadores, redes, infraestrutura...  
                         </h2>
                         </div>
                     </div>    
@@ -136,7 +136,7 @@
 <script src="mobile.js"></script>
 <script>
     var balls = document.querySelector('.balls')
-    var quant = document.querySelectorAll('.slides .pag .image')
+    var quant = document.querySelectorAll('.slides .image')
     var atual = 0
     var imagem = document.getElementById('atual')
     var next = document.getElementById('next')
@@ -167,7 +167,7 @@
     })
     next.addEventListener('click', ()=>{
         atual++
-        rolar = false
+        rolar = true
         slide()
     })
 
@@ -190,10 +190,10 @@
         slide()
         }
         else{
-            rolar = false
+            rolar = true
         }
         
-    },4000)
+    },7000)
 
 </script>
 
