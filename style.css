@@ -632,11 +632,27 @@ legend{
     }
 
     .image img{
-        width: fit-content; /*Representa o tamanho da imagem. Fica no fit-content para padronizar os tamanhos*/
-        height: 50vh; /*Nesse percentual permite a inclusão da tag <p>*/
+        width: 50vw; /*Representa o tamanho da imagem. Fica no fit-content para padronizar os tamanhos*/
+        height: 30vw; /*Nesse percentual permite a inclusão da tag <p>*/
         /*margin-right: 20%;
         margin-left: 20%;*/
         
+    }
+
+    .slides{
+        padding-top: 15%; 
+    }
+
+    .paragrafos{
+        width: 50vw;
+        height: 50vw;
+        
+    }
+
+    .propaganda{
+        margin-top: 10%;
+        margin-left: 12%;
+        margin-right: 10%;
     }
 
     .texto{
@@ -758,6 +774,34 @@ legend{
         margin-top: -5vh;
     }
 
+    .btn{
+        margin-top: 55%;
+    }
+
+}
+
+@media(max-width: 850px){
+    .propaganda{
+        padding-top: 0%;
+        margin-top: 0%;
+    }
+}
+
+@media(max-width: 700px){
+    .menuli{
+        padding-top: 15%;
+
+    }
+    .image img{
+        width: 50vw; /*Representa o tamanho da imagem. Fica no fit-content para padronizar os tamanhos*/
+        height: 80%; /*Nesse percentual permite a inclusão da tag <p>*/
+    }
+
+    .propaganda{
+        padding-right: 0%;
+        margin-right: 0%;
+    }
+
 }
 
 @media(max-width: 550px){
@@ -797,17 +841,34 @@ legend{
     }
 
     .image img{
-        width: fit-content; /*Representa o tamanho da imagem. Fica no fit-content para padronizar os tamanhos*/
+        width: 100vw; /*Representa o tamanho da imagem. Fica no fit-content para padronizar os tamanhos*/
         height: 50vh; /*Nesse percentual permite a inclusão da tag <p>*/
-        /*margin-right: 20%;
-        margin-left: 20%;*/
+        margin-right: 0%;
+        margin-left: 0%;
         
+    }
+
+    .post{
+        margin: 0%;
+        padding: 0% 0% 5% 0%;
+        text-align: center;    
+        width: 100%;
+    }
+
+    .slide{
+        width: 100%;
     }
 
     .slides{
         width: 100%;
         padding-top: 2%; 
-        justify-content: space-around;
+        /*justify-content: space-around;*/
+    }
+
+    .propaganda{
+        padding-right: 0%;
+        margin-right: 0%;
+        margin-left: 0%;
     }
     
     img{
@@ -861,12 +922,7 @@ legend{
         width: 100%;
     }
 
-    .post{
-        margin: 0%;
-        padding: 0% 0% 5% 0%;
-        text-align: center;    
-        width: 100%;
-    }
+    
 
     .btn{
         color: #fff;
@@ -947,12 +1003,6 @@ legend{
 
     legend{
         width: 18%;
-    }
-
-    .image img{
-        width:  100%; /*Representa o tamanho da imagem. Fica no fit-content para padronizar os tamanhos*/
-        height: 50vw; /*Nesse percentual permite a inclusão da tag <p>*/
-       
     }
 
     .paragrafos{
@@ -1066,7 +1116,6 @@ legend{
 
     display:block; /*Foi criada a class pag para configurar texto e imagem do carrossel lado a lado, o que é permitido através do atributo 
     'flex';*/
-    width: 300vw;
 }
 
 
