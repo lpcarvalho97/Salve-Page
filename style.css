@@ -399,9 +399,27 @@ input{
 
 .picture1{
     width: 50%;
+    height: fit-content;
     margin-top: 5%;
     margin-bottom: 5%;
 
+}
+
+.foto1{
+    width: 45vw;
+    height: 30vw;
+}
+
+.foto2{
+    width: 48vw;
+    height: 24vw;
+    margin-top: -20%;
+}
+
+.foto3  {
+    width: 45vw;
+    height: 30vw;
+    margin-top: -9vw;
 }
 
 .mot{
@@ -418,7 +436,14 @@ input{
     width: 98%;
 }
 
+.postagem2{
+    display:flex; /*Verificar!!!! */
+    margin-left: 2vw;
+    width: 98%;
+}
+
 .picture2{
+    height: 50vw;
     height: 18vw;
 
 }
@@ -435,13 +460,50 @@ input{
     margin-left: 2vw;
 }
 
-.servtexto{
+.servtexto1{
     width: 95%;
-    padding-top: 9vw;
+    padding-top: 3vw;
     font-family: kanit, 'Times New Roman', Times, serif;
     color: rgb(243, 108, 30);
     font-size: 4vh;
+    text-align: center;
 
+}
+
+.servtexto3{
+    width: 95%;
+    margin-top: -2vw;
+    font-family: kanit, 'Times New Roman', Times, serif;
+    color: rgb(8, 8, 8);
+    font-size: 4vh;
+    text-align: center;
+
+}
+
+.servtexto2{
+    width: 95%;
+    margin-top: -4vw;
+    font-family: kanit, 'Times New Roman', Times, serif;
+    color: rgb(243, 108, 30);
+    font-size: 4vh;
+    text-align: center;
+
+}
+
+.vendedor{
+    text-align: center;
+    background-color: rgb(199, 39, 39);
+    width: 50%;
+    padding: 3%;
+    margin-left: 22%;
+    border-radius: 1%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.vende {
+    text-decoration: none;
+    
 }
 
 textarea{
@@ -516,6 +578,18 @@ legend{
     .comeca{
         margin-left: 2%;
     }
+
+    .servtexto2{
+        width: 95%;
+        margin-top: -9vw;
+        font-family: kanit, 'Times New Roman', Times, serif;
+        color: rgb(243, 108, 30);
+        font-size: 4vh;
+        text-align: center;
+    
+    }
+
+    
 }
 
 
@@ -660,6 +734,28 @@ legend{
 
     .menuli{
         margin-top: 30%;
+    }
+
+    .foto2{
+        margin-top: -5vh;
+        
+    }
+
+    .foto3{
+        margin-top: -10%;
+    }
+
+    .servtexto1{
+        font-size: 2vh;
+    }
+
+    .servtexto2{
+        font-size: 2vh;
+    }
+
+    .servtexto3{
+        font-size: 2vh;
+        margin-top: -5vh;
     }
 
 }
@@ -872,6 +968,99 @@ legend{
         display: block;
         padding-top: 2%;
     }
+
+    .mot{
+        margin-top: 3%;
+        margin-bottom: 0;
+        padding-bottom: 0%;
+        font-size: 5vh;
+    }
+
+    .postagem1{
+        display:flex;
+        flex-direction: column-reverse; /*Para fazer o display ficar em coluna reversa é necessário utilizar a combinação de propriedades das linhas 939 e 940 */
+        margin-left: 2vw;
+        width: 98%;
+        
+    }
+
+    .postagem2{
+        display:flex;
+        flex-direction: column;
+        margin-left: 2vw;
+        width: 98%;
+    }
+
+    .servtexto1{
+        width: 95%;
+        padding-top: 0vw;
+        font-family: kanit, 'Times New Roman', Times, serif;
+        color: rgb(243, 108, 30);
+        font-size: 4vh;
+        padding-bottom: 5%;
+    
+    }
+
+    .servtexto2{
+        width: 95%;
+        margin-top: -4vw;
+        font-family: kanit, 'Times New Roman', Times, serif;
+        color: rgba(185, 99, 47, 0.892);
+        font-size: 4vh;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .servtexto3{
+        width: 95%;
+        font-family: kanit, 'Times New Roman', Times, serif;
+        color: rgba(8, 8, 8, 0.666);
+        padding-bottom: 5%;
+        font-size: 4vh;
+    
+    }
+
+    .picture1{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .picture2{
+        height: 100%;
+        height: fit-content;
+    
+    }
+
+    .foto1{
+        width: 98%;
+        height: fit-content;
+    }
+
+    .foto3  {
+        width: 98%;
+        height: fit-content;
+        margin-top: 0vw;
+    }
+    
+
+    .foto2{
+        width: 98%;
+        height: fit-content;
+        margin-top: 0%;
+    }
+
+    .inner{
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 0vw;
+    }
+
+    .vendedor{
+        width: 100%;
+        padding: 3% 0% 3% 0%;
+        margin-left: 0%;
+        border-radius: 2%;
+    }
     
     .pag{
 
@@ -879,6 +1068,8 @@ legend{
     'flex';*/
     width: 300vw;
 }
+
+
 
 
 
