@@ -88,17 +88,17 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
     
-            <form class="escrever">
+            <form action="mailto:empresasalvesistemas@gmail.com" method="post" enctype="text/plain" class="escrever">
                 <fieldset class="campo">
                     <legend><b>Fale conosco:</b></legend>
-                    <label class="descreve">Nome:</label><input type="text"><br>
-                    <label class="descreve">Telefone:</label><input type="tel"><br>
-                    <label class="descreve">E-mail:</label><input type="email"><br>
-                    <label class="descreve">Assunto:</label><input type="text"><br>
+                    <label class="descreve">Nome:</label><input name="nome" type="text" required><br>
+                    <label class="descreve">Telefone:</label><input name="telefone" type="tel" required><br>
+                    <label class="descreve">E-mail:</label><input  name="email" type="email" required><br>
+                    <label class="descreve">Assunto:</label><input name="assunto" type="text" required><br>
                     <br>
-                    <label><textarea cols="90" rows="15">Digite seu texto aqui</textarea></label>
+                    <label><textarea name="texto" cols="90" rows="15" required>Digite seu texto aqui</textarea></label>
                     <div class="alinha">
-                        <input class="botao" type="submit">
+                        <input class="botao" type="submit" value="Enviar">
                     </div>
                 </fieldset>
                 
