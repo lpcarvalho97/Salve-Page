@@ -788,6 +788,12 @@ legend{
     }
 }
 
+@media(max-width: 760px){
+    .texto{
+        padding-bottom: 2%;
+    }
+}
+
 @media(max-width: 700px){
     .menuli{
         padding-top: 15%;
@@ -801,6 +807,22 @@ legend{
     .propaganda{
         padding-right: 0%;
         margin-right: 0%;
+    }
+
+    .localizacao{
+        width: 96%;
+    }
+
+    .escrever{
+        margin-left: 2%;
+        padding: 1%;
+        margin-right: 0%;
+        width: 94%;
+        
+    }
+
+    .texto{
+        padding-bottom: 2%;
     }
 
 }
@@ -885,6 +907,7 @@ legend{
         font-size: 4vh;
         text-align: center;
         margin-left: 0%;
+        margin-bottom: 0%;
     }
 
     .menu{
@@ -926,7 +949,7 @@ legend{
     
 
     .btn{
-        color: #fff;
+        color: rgba(48, 41, 41, 0.425);
         padding: 1%;
         text-align: center;
         display: flex;
@@ -1056,7 +1079,7 @@ legend{
         width: 95%;
         margin-top: -4vw;
         font-family: kanit, 'Times New Roman', Times, serif;
-        color: rgba(185, 99, 47, 0.892);
+        color: rgba(84, 64, 53, 0.892);
         font-size: 4vh;
         text-align: center;
         padding-bottom: 5%;
