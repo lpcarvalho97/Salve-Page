@@ -484,7 +484,7 @@ input{
     width: 95%;
     margin-top: -4vw;
     font-family: kanit, 'Times New Roman', Times, serif;
-    color: rgb(243, 108, 30);
+    color: rgba(84, 64, 53, 0.892);
     font-size: 4vh;
     text-align: center;
 
@@ -584,7 +584,7 @@ legend{
         width: 95%;
         margin-top: -9vw;
         font-family: kanit, 'Times New Roman', Times, serif;
-        color: rgb(243, 108, 30);
+        color: rgba(84, 64, 53, 0.892);
         font-size: 4vh;
         text-align: center;
     
